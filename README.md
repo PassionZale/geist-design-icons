@@ -9,7 +9,7 @@
 ## Install
 
 ```sh
-npm install @ohqu/geist-desing-icons
+npm install @whouu/geist-desing-icons
 ```
 
 ## Development
@@ -24,7 +24,7 @@ npm run dev
 
 ```vue
 <script setup>
-    import { GIconActivity } from '@ohqu/geist-desing-icons'
+    import { GIconActivity } from '@whouu/geist-desing-icons'
 <script>
 
 <template>

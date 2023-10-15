@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "@ohqu/geist-design-icons",
+      name: "@whouu/geist-design-icons",
       fileName: (format) => `geist-design-icons.${format}.js`,
     },
     rollupOptions: {
