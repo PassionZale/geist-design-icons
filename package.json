@@ -1,0 +1,45 @@
+{
+  "name": "@ohqu/geist-design-icons",
+  "version": "0.0.0",
+  "description": "svg icon library for geist-design",
+  "type": "module",
+  "keywords": [
+    "Vue3",
+    "Vue 3",
+    "Vue",
+    "VueJS",
+    "feather-icons",
+    "icons",
+    "geist-design",
+    "geist-design-icons"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/geist-design-icons.umd.js",
+  "module": "./dist/geist-design-icons.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/geist-design-icons.es.js",
+      "require": "./dist/geist-design-icons.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "update-icons": "node ./scripts/update-icons.js"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "feather-icons": "^4.29.1",
+    "fs-extra": "^11.1.1",
+    "pascalcase": "^2.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
