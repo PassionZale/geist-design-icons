@@ -18,9 +18,11 @@ defineOptions({ name: "GIconPocket", inheritAttrs: false });
 const $attrs = useAttrs();
 
 const props = defineProps({
+  /** icon 大小  */
   size: {
     type: [String, Number],
   },
+  /** icon 颜色  */
   color: {
     type: String,
     default: "currentColor",
