@@ -28,7 +28,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "release": "npm publish --access public",
+    "release": "npm publish --registry https://registry.npmjs.org --access public",
     "update-icons": "node ./scripts/update-icons.js"
   },
   "dependencies": {
