@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import { resolve } from "node:path"
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import dts from "vite-plugin-dts";
+import { resolve } from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), dts({ include: ["./src/components", './src/index.ts'] })],
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
@@ -20,4 +21,4 @@ export default defineConfig({
       },
     },
   },
-})
+});

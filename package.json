@@ -20,6 +20,7 @@
   "module": "./dist/geist-design-icons.es.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/geist-design-icons.es.js",
       "require": "./dist/geist-design-icons.umd.js"
     }
@@ -40,6 +41,7 @@
     "pascalcase": "^2.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.0",
     "vue-tsc": "^1.8.5"
   }
 }
