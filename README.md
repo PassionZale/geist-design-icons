@@ -1,18 +1,18 @@
 # geist-desing-icons
 
-基于 [feathericons](https://feathericons.com/) 所构建的 svg 组件库
+基于 [feathericons](https://feathericons.com/) 所构建的 svg 组件库，适用于 `vue3`
 
-## Search
+## 文档
 
-全部的图标可在此处查看 [feathericons](https://feathericons.com/)
+[Geist Design](https://geist-design.lovchun.com/components/icons.html)
 
-## Install
+## 安装
 
 ```sh
 npm install @whouu/geist-desing-icons
 ```
 
-## Development
+## 开发
 
 ```sh
 npm run update-icons
@@ -20,10 +20,10 @@ npm run update-icons
 npm run dev
 ```
 
-## Usage
+## 使用
 
-```vue
-<script setup>
+```html
+<script setup lang="ts">
     import { GIconActivity } from '@whouu/geist-desing-icons'
 <script>
 
