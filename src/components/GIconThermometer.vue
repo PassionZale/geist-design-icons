@@ -4,6 +4,7 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     v-bind="attrs"
+    :class="$attrs.class"
     :style="styles"
     >
     <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
@@ -18,7 +19,7 @@ defineOptions({ name: "GIconThermometer", inheritAttrs: false });
 const $attrs = useAttrs();
 
 const props = defineProps({
-  /** icon 大小  */
+  /** icon 大小, 默认 24  */
   size: {
     type: [String, Number],
   },

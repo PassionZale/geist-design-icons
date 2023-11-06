@@ -4,6 +4,7 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     v-bind="attrs"
+    :class="$attrs.class"
     :style="styles"
     >
     <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
@@ -18,7 +19,7 @@ defineOptions({ name: "GIconTag", inheritAttrs: false });
 const $attrs = useAttrs();
 
 const props = defineProps({
-  /** icon 大小  */
+  /** icon 大小, 默认 24  */
   size: {
     type: [String, Number],
   },

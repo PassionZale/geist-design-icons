@@ -4,6 +4,7 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     v-bind="attrs"
+    :class="$attrs.class"
     :style="styles"
     >
     <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>
@@ -18,7 +19,7 @@ defineOptions({ name: "GIconTv", inheritAttrs: false });
 const $attrs = useAttrs();
 
 const props = defineProps({
-  /** icon 大小  */
+  /** icon 大小, 默认 24  */
   size: {
     type: [String, Number],
   },

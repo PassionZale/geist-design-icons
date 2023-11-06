@@ -4,6 +4,7 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     v-bind="attrs"
+    :class="$attrs.class"
     :style="styles"
     >
     <circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
@@ -18,7 +19,7 @@ defineOptions({ name: "GIconAward", inheritAttrs: false });
 const $attrs = useAttrs();
 
 const props = defineProps({
-  /** icon 大小  */
+  /** icon 大小, 默认 24  */
   size: {
     type: [String, Number],
   },
